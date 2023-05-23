@@ -90,9 +90,12 @@ section {
     font-size: 20px;
     letter-spacing: 2px;
     color: #159957;
+    line-height: 50px;
 }
 .sol-yazilar {
     position: absolute;
+    padding: 10px;
+    padding-left: 40px;
 }
 /* section yazilar end */
 
@@ -209,7 +212,7 @@ section {
 }
 
 .input {
-  padding: 6px;
+  padding: 7px;
   margin-bottom: 20px;
   width: 100%;
   font-size: 1rem;
