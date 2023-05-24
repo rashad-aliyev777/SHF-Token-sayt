@@ -4,7 +4,9 @@
 section {
   font-family: 'Roboto', sans-serif;
 }
+
 /* header nav-lar start */
+
 .navbar {
 background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 display: flex;
@@ -13,7 +15,7 @@ padding: 13px;
 }
 
 .nav-sag {
-  padding: 17px 40px 0;
+  padding: 15px 40px 0;
 }
 .nav-sag a {
   padding: 30px;
@@ -26,12 +28,17 @@ padding: 13px;
 .nav-sag a:hover {
   color: white;
 }
+
+.nav-sol {
+  padding-left: 30px;
+}
+
 /* header end */
 
+
 /* NAVBAR BUTTON-SOL */
-.nav-sol {
-    padding-left: 30px;
-}
+
+
 .btn {
     --green: #1BFD9C;
     font-size: 15px;
@@ -68,10 +75,13 @@ padding: 13px;
   .btn:hover:before {
     transform: translateX(15em);
   }
+
    /* NAVBAR BUTTON-SOL END */
 
 
+
 /* section yazilar hissesi start */
+
 section {
     background-color: rgba(0,0,0,.7);
     height: 55vh;
@@ -97,12 +107,14 @@ section {
     padding: 10px;
     padding-left: 40px;
 }
+
 /* section yazilar end */
 
 
 /* section qeydiyyat start */
+
 .qeydiyyat {
-  padding-top: 150px;
+  padding-top: 120px;
   padding-left: 50px;
   padding-right: 100px;
 }
@@ -116,7 +128,11 @@ section {
 /* section qeydiyyat end */
 
 
+
+
 /* sol yazilardaki button */
+
+
 .sol-yazilar button {
     padding: 10px 40px;
     font-size: 18px;
@@ -183,6 +199,8 @@ section {
    .sol-yazilar button:active:after {
     box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
    }
+
+
 /* sol yazilardaki button end */
 
 
@@ -248,12 +266,37 @@ section {
 }
     
     
-    
-
-
 /* section qeydiyyat yeri end */
 
+/* footer umumi start */
+footer {
+  background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.adresler-sebekeler {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  
+}
+  .sebeke {
+    height: 25vh;
+    
+  }
+  .sol-animasiya {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .google {
+    display: flex;
+    align-items: center;
+  }
+/* footer umumi start */
+
+
 /* footer sosial sebeke start */
+
+
 .main {
     display: flex;
     flex-direction: column;
@@ -379,3 +422,135 @@ section {
     fill: white;
   }
 /* footer sosial sebeke end */
+
+
+
+/* footer animasiya start */
+
+.loader {
+  display: block;
+  width: 84px;
+  height: 84px;
+  position: relative;
+}
+
+.loader:before , .loader:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #FFF;
+  transform: translate(-50% , -100%)  scale(0);
+  animation: push_401 2s infinite linear;
+}
+
+.loader:after {
+  animation-delay: 1s;
+}
+
+@keyframes push_401 {
+  0% , 50% {
+    transform: translate(-50% , 0%)  scale(1)
+  }
+
+  100% {
+    transform: translate(-50%, -100%) scale(0)
+  }
+}
+
+
+/* footer animasiya end */
+
+
+
+/* footer google  start */
+
+
+.playstore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+}
+
+.playstore-button:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-1 {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-2 {
+  font-weight: 600;
+}
+
+
+/* footer google end */
+
+/* 2 ci footer start */
+  .adress {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 10px;
+  }
+  .solda-element {
+    display: flex;
+    border-bottom: 1px solid rgb(0,0,0,0.7);
+  }
+
+  .solda-element p {
+    padding: 15px;
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(0,0,0,0.7);
+    transition: 0.5s ease-in;
+  }
+
+  .solda-element p:hover {
+    color: white;
+  }
+
+  .sag-cc {
+    border-bottom: 1px solid rgb(0,0,0,0.7);
+  }
+
+  .sag-cc p {
+    padding: 15px;
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(0,0,0,0.7);
+    transition: 0.5s ease-in;
+  }
+  
+  .sag-cc p:hover {
+    color: white;
+  }
+/* 2 ci footer end */
